@@ -4,18 +4,24 @@ class Results extends Component{
     constructor(props) {
         super(props);
         this.state = {};
+        this.selectMovie = this.selectMovie.bind(this)
     }
+
+    selectMovie = (movie) => {
+        this.props.selectedMovie(movie)
+      }
+    
     render(){
-        const { searchResults, setSelectedMovie } = this.props;
+        const { searchResults } = this.props;
         console.log(searchResults)
         return (
             <ul className="search-results">
-                {searchResults.searchResults.length > 0 ? (
-                    searchResults.searchResults.map(movie =>(
+                {searchResults.length > 0 ? (
+                    searchResults.map(movie =>(
                         <li
                             className="search-results-li"
                             key={movie.imdbID}
-                            onClick={event=>setSelectedMovie(event, movie)}
+                            onClick={() => this.selectMovie(movie)}
                         >
                         {movie.Title}
                         </li>
