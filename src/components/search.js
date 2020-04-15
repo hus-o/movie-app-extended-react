@@ -21,7 +21,7 @@ class Search extends Component {
         axios.get(`http://www.omdbapi.com/?s=${userQuery}&apikey=71ef6486`)
         .then(results => 
           {
-              this.props.searchResults(results)}
+              this.props.searchResults(results.data.Search)}
         )};
 
       render() {
