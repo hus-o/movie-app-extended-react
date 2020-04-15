@@ -16,7 +16,7 @@ class Results extends Component{
         console.log(searchResults)
         return (
             <ul className="search-results">
-                {searchResults.length > 0 ? (
+                {searchResults.length > 0 && (
                     searchResults.map(movie =>(
                         <li
                             className="search-results-li"
@@ -25,10 +25,8 @@ class Results extends Component{
                         >
                         {movie.Title}
                         </li>
-                    ))
-                ) :
-                    (<h3>Waiting for search</h3>)
-                }
+                    )))}
+                
             </ul>
         );
     }

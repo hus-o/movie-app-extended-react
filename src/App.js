@@ -19,11 +19,12 @@ class App extends Component {
   }
 
   getSelectedMovie = (movie) => {
-    this.setState({selectedMovie:movie})
+    console.log(this.selectedMovie)
+    this.setState({selectedMovie:this.state.selectedMovie.concat(movie)})
     console.log(this.selectedMovie)
   }
   
-  render() { 
+  render() {
     return (
       <div>
         <Search searchResults = {this.getSearchResults} />
