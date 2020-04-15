@@ -23,11 +23,12 @@ class Results extends Component{
                             key={movie.imdbID}
                             onClick={() => this.selectMovie(movie)}
                         >
-                        {movie.Title}
+                        {movie.Title}<br/><br/>
+                        <img src={movie.Poster} alt="Movie Poster" className={movie.Title}/>
                         </li>
                     ))
                 ) :
-                    (<h3>Waiting for search</h3>)
+                    (<h3> </h3>)
                 }
             </ul>
         );

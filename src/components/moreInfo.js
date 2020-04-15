@@ -9,7 +9,7 @@ class Info extends Component {
         console.log(this.props.selectedMovie.Poster)
         return ( 
             <React.Fragment>
-                <img src={this.props.selectedMovie.Poster} alt="movie poster"></img>
+                <p className="moreInfo">Release Year: {this.props.selectedMovie.Year}<br/>IMDB ID: {this.props.selectedMovie.imdbID}</p>
             </React.Fragment>
          );
     }
