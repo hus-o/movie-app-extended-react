@@ -26,7 +26,7 @@ class App extends Component {
   
   render() {
     return (
-      <div>
+      <div className="App">
         <Search searchResults = {this.getSearchResults} />
         <Results searchResults = {this.state.searchResults} selectedMovie = {this.getSelectedMovie}/>
         <Info selectedMovie = {this.state.selectedMovie}/>

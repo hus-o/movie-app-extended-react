@@ -13,9 +13,7 @@ class Info extends Component {
         console.log(selectedMovie.length, selectedMovie)
         return ( 
             <React.Fragment>
-                {(selectedMovie.length > 0) && 
-                (<img src={selectedMovie[0].Poster} alt="movie poster"></img>)
-                }
+                <p className="moreInfo">Release Year: {this.props.selectedMovie.Year}<br/>IMDB ID: {this.props.selectedMovie.imdbID}</p>
             </React.Fragment>
          );
     }
