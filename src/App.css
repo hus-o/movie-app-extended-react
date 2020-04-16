@@ -31,3 +31,9 @@ ul{
 }
 
 li{width: 25%;}
+
+a{
+  text-decoration: none;
+  color: white;
+
+}

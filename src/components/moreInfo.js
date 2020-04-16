@@ -13,7 +13,7 @@ class Info extends Component {
         console.log(selectedMovie.length, selectedMovie)
         return ( 
             <React.Fragment>
-                <p className="moreInfo">Release Year: {this.props.selectedMovie.Year}<br/>IMDB ID: {this.props.selectedMovie.imdbID}</p>
+                {(selectedMovie.length > 0) && <p className="moreInfo">Release Year: {selectedMovie[0].Year}<br/>IMDB Link: <a href={"https://imdb.com/title/"+selectedMovie[0].imdbID}>{selectedMovie[0].Title}</a></p>}
             </React.Fragment>
          );
     }

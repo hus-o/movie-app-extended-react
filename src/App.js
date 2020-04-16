@@ -20,7 +20,7 @@ class App extends Component {
 
   getSelectedMovie = (movie) => {
     console.log(this.selectedMovie)
-    this.setState({selectedMovie:this.state.selectedMovie.concat(movie)})
+    this.setState({selectedMovie:[movie]})
     console.log(this.selectedMovie)
   }
   
