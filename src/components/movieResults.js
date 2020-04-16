@@ -16,7 +16,7 @@ class Results extends Component{
         console.log(searchResults)
         return (
             <ul className="search-results">
-                {searchResults.length > 0 ? (
+                {searchResults.length > 0 && (
                     searchResults.map(movie =>(
                         <li
                             className="search-results-li"
@@ -26,10 +26,7 @@ class Results extends Component{
                         {movie.Title}<br/><br/>
                         <img src={movie.Poster} alt="Movie Poster" className={movie.Title}/>
                         </li>
-                    ))
-                ) :
-                    (<h3> </h3>)
-                }
+                    )))}
             </ul>
         );
     }
