@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Search for a movie"
+    type="text"
+    value=""
+  />
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;

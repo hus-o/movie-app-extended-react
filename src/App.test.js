@@ -1,9 +1,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
+import Search from "./components/Search";
+import renderer from 'react-test-renderer';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('fake test', () => {
+  expect(true).toBeTruthy();
 });
+
+test('renders correctly', () => {
+  const tree = renderer.create(<Search />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('it searches', () =>{
+  
+})
