@@ -4,12 +4,7 @@ class Results extends Component{
     constructor(props) {
         super(props);
         this.state = {};
-        this.selectMovie = this.selectMovie.bind(this)
     }
-
-    selectMovie = (movie) => {
-        this.props.selectedMovie(movie)
-      }
     
     render(){
         const { searchResults } = this.props;
@@ -21,7 +16,7 @@ class Results extends Component{
                         <li
                             className="search-results-li"
                             key={movie.imdbID}
-                            onClick={() => this.selectMovie(movie)}
+                            onClick={() => this.props.selectedMovie(movie)}
                         >
                         {movie.Title}<br/><br/>
                         <img src={movie.Poster} alt="Movie Poster" className={movie.Title}/>
