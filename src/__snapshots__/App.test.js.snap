@@ -1,18 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<form
-  onSubmit={[Function]}
+exports[`Results render with a result in array 1`] = `
+<ul
+  className="search-results"
 >
-  <input
-    onChange={[Function]}
-    placeholder="Search for a movie"
-    type="text"
-    value=""
-  />
-  <input
-    type="submit"
-    value="Submit"
-  />
-</form>
+  <li
+    className="search-results-li"
+    onClick={[Function]}
+  >
+    Saw
+    <br />
+    <br />
+    <img
+      alt="Movie Poster"
+      className="Saw"
+      src="https://m.media-amazon.com/images/M/MV5BMjE4MDYzNDE1OV5BMl5BanBnXkFtZTcwNDY2OTYwNA@@._V1_SX300.jpg"
+    />
+  </li>
+</ul>
+`;
+
+exports[`Results render with empty array 1`] = `
+<ul
+  className="search-results"
+/>
 `;
