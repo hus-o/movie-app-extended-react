@@ -25,6 +25,3 @@ describe("Results", () => {
     expect(tree).toMatchSnapshot();
   })
 });
-
-
-
