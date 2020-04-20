@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow, mount} from "enzyme"
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import Info from "./components/moreInfo"
+import Info from "../components/moreInfo"
 configure({ adapter: new Adapter() });
 
 describe("More Info", () =>{

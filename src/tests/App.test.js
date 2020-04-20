@@ -1,13 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow, mount} from "enzyme"
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { render } from '@testing-library/react';
-import App from './App';
-import Info from "./components/moreInfo"
-import Results from "./components/movieResults"
-configure({ adapter: new Adapter() });
+import Results from "../components/movieResults"
 
 describe("Results", () => {
   it('render with empty array', () => {
